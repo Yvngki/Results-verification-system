@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+tr,
+td {
+    padding: 10px;
+}
+
+input {
+    border-radius: 8px;
+}
+
+legend {
+    text-align: center;
+}
+
+fieldset {
+    padding: 40px 60px 40px 60px;
+    background-color: #004460;
+    color: aliceblue;
+    border-radius: 30px;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 60px;
+}
+
+.navbar {
+    margin: 10px;
+    background-color: #004460;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(to bottom left, #ffffff -5%, #9999ff 182%);
+    height: 100vh;
+}

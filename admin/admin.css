@@ -1,0 +1,75 @@
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 20px;
+}
+
+
+/* Header styles */
+
+header {
+    background-color: #004460;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+/* Navigation styles */
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    background-color: #004460;
+    color: #fff;
+}
+
+
+/* Main styles */
+
+main {
+    padding-top: 50px;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #004460;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+}

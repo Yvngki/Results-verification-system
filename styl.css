@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #004466;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    padding: 10px;
+    margin-top: 8px;
+}
+
+#nav-image {
+    border-radius: 100%;
+    background-color: #fff;
+    padding: 8px;
+}
+
+.nav-link {
+    transition: 0.7S ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+    font-size: 1.05rem;
+    border-bottom: 3px solid #fff;
+    padding: 8px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    background-color: white;
+}
+
+center {
+    margin: 120px;
+}
+
+table {
+    padding: 30px;
+}
+
+td,
+th {
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+td {
+    background: linear-gradient(to top, #ccccff 98%, #ccffcc 102%);
+}
+
+th {
+    background-color: #004466;
+    color: #fff;
+}
+
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #004466;
+        width: 100%;
+        text-align: center;
+        transition: 0.2s;
+        margin-top: 20px;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        right: 0%
+    }
+    center {
+        margin: 100px 0 0 0;
+    }
+}
